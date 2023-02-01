@@ -1,1 +1,3 @@
-# atmega8-evaluation-board
+# ATMEGA8A Evaluation Board
+
+## Getting Started
