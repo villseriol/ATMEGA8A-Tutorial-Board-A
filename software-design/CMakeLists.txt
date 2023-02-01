@@ -1,10 +1,15 @@
-DEVICE = atmega8A
-CLOCK = 16000000
-PROGRAMMER = -e -v -p $(DEVICE) -c arduino -P COM3 -b 19200 -D
+cmake_minimum_required(VERSION 3.10)
+project(atmega8a-evaluation-board)
 
-L_FUSE = 0b11110111
-H_FUSE = 0b10011001
-E_FUSE = 0xFF
+set(DEVICE "atmega8A")
+set(CLOCK "16000000")
+set(PROGRAMMER "-e -v -p ${DEVICE} -c arduino -P COM3 -b 19200 -D")
+
+set(L_FUSE "0b11110111")
+set(H_FUSE "0b10011001")
+set(E_FUSE "0xFF")
+
+add_compile_options(-Wall -Os -DF_CPU=${CLOCK} -mmcu=${DEVICE})
 
 ######################################################################
 ######################################################################
