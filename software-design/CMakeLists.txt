@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
-include(cmake/avr-toolchain-setup.cmake)
+include(cmake/avr-cross-compile-setup.cmake)
+include(cmake/avr-executable-setup.cmake)
 project(atmega8a-evaluation-board)
 
 ######################################################################
