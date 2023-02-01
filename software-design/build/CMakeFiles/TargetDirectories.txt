@@ -1,0 +1,7 @@
+D:/Github/atmega8-evaluation-board/software-design/build/CMakeFiles/main.dir
+D:/Github/atmega8-evaluation-board/software-design/build/CMakeFiles/edit_cache.dir
+D:/Github/atmega8-evaluation-board/software-design/build/CMakeFiles/rebuild_cache.dir
+D:/Github/atmega8-evaluation-board/software-design/build/CMakeFiles/list_install_components.dir
+D:/Github/atmega8-evaluation-board/software-design/build/CMakeFiles/install.dir
+D:/Github/atmega8-evaluation-board/software-design/build/CMakeFiles/install/local.dir
+D:/Github/atmega8-evaluation-board/software-design/build/CMakeFiles/install/strip.dir
