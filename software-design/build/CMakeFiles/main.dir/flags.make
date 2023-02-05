@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -Wall -Os -DF_CPU=16000000 -mmcu=atmega8a
+CXX_FLAGS = -DF_CPU=16000000 -mmcu=atmega8a -Wall -Os
 

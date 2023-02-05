@@ -98,8 +98,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.25.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeSystem.cmake"
-  "D:/Github/atmega8-evaluation-board/software-design/cmake/avr-cross-compile-setup.cmake"
-  "D:/Github/atmega8-evaluation-board/software-design/cmake/avr-executable-setup.cmake"
+  "D:/Github/atmega8-evaluation-board/software-design/cmake/avr-gcc-toolchain.cmake"
   )
 
 # The corresponding makefile is:

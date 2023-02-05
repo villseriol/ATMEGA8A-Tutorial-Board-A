@@ -1,6 +1,4 @@
 cmake_minimum_required(VERSION 3.10)
-include(cmake/avr-cross-compile-setup.cmake)
-include(cmake/avr-executable-setup.cmake)
 project(atmega8a-evaluation-board)
 
 ######################################################################
@@ -16,13 +14,14 @@ set(L_FUSE "0b11110111")
 set(H_FUSE "0b10011001")
 set(E_FUSE "0xFF")
 
+add_compile_options(-Wall -Os)
 
-add_compile_options(-Wall -Os -DF_CPU=${CLOCK} -mmcu=${DEVICE})
-
-add_executable(main main.cpp)
-install(
-	TARGETS main
-	DESTINATION lib/${PROJECT_NAME}
+add_executable(main src/main.cpp)
+set_target_properties(
+   main
+   PROPERTIES
+   OUTPUT_NAME main.elf
+   COMPILE_FLAGS "-DF_CPU=${CLOCK} -mmcu=${DEVICE}"
 )
 
 # Tune the lines below only if you know what you are doing:
