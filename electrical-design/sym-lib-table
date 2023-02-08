@@ -1,3 +1,2 @@
 (sym_lib_table
-  (lib (name "SamacSys_Parts")(type "Legacy")(uri "${KIPRJMOD}/library/SamacSys_Parts.lib")(options "")(descr ""))
 )
