@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/edward/Documents/Github/atmega8-evaluation-board/build",
-  "command": "/usr/bin/c++   -g -DF_CPU=16000000 -mmcu=atmega8a -Wall -Os -o CMakeFiles/main.dir/src/main.cpp.o -c /home/edward/Documents/Github/atmega8-evaluation-board/software-design/src/main.cpp",
-  "file": "/home/edward/Documents/Github/atmega8-evaluation-board/software-design/src/main.cpp"
-}
-]

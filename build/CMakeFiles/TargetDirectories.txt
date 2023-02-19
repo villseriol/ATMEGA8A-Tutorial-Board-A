@@ -1,3 +1,0 @@
-/home/edward/Documents/Github/atmega8-evaluation-board/build/CMakeFiles/main.dir
-/home/edward/Documents/Github/atmega8-evaluation-board/build/CMakeFiles/edit_cache.dir
-/home/edward/Documents/Github/atmega8-evaluation-board/build/CMakeFiles/rebuild_cache.dir
