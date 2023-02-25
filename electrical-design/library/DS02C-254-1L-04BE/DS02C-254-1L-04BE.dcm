@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DS02C-254-1L-04BE
+D DIP Switches / SIP Switches DIP Switch, SPST, 2.54 pitch, Raised actuator, convex bottom, long pin, 4 position, Blue
+K
+F https://www.cuidevices.com/product/resource/digikeypdf/ds02-254.pdf
+$ENDCMP
+#
+#End Doc Library
