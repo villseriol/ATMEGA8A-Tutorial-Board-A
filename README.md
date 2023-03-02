@@ -1,8 +1,9 @@
 # ATMEGA8A Evaluation Board
 
-| Revision | Description                                  |
-| -------- | -------------------------------------------- |
-| 1.0      | Completed initial design of evaluation board |
+| Revision | Description                                     |
+| -------- | ----------------------------------------------- |
+| 1.0      | Completed initial design of evaluation board    |
+| 1.1      | Added in-series resistor to external reset line |
 
 ## Getting Started
 
@@ -14,6 +15,6 @@ cmake -S . -B build -G "Unix Makefiles"
 
 ### Rev 1.0
 
-| Top                                | Bottom                                   |
-| ---------------------------------- | ---------------------------------------- |
-| ![Board Top Layer](images/top.svg) | ![Board Bottom Layer](images/bottom.svg) |
+| Top                                     | Bottom                                        |
+| --------------------------------------- | --------------------------------------------- |
+| ![Board Top Layer](images/R1.0/top.svg) | ![Board Bottom Layer](images/R1.0/bottom.svg) |
