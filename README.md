@@ -1,9 +1,9 @@
 # ATMEGA8A Evaluation Board
 
-| Revision | Description                                                                   |
-| -------- | ----------------------------------------------------------------------------- |
-| 1.0      | Completed initial design of evaluation board                                  |
-| 1.1      | Improvements to voltage spike resistance on microcontroller on external reset |
+| Revision | Description                                                                                                                                    |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.0      | <ul><li>Completed initial design of evaluation board.</li></ul>                                                                                |
+| 1.1      | <ul><li>Added series resistor to external reset for MCU.</li><li>Added series resistor to potentiometer for short-circuit protection</li></ul> |
 
 ## Getting Started
 
