@@ -27,3 +27,7 @@ cmake -S . -B build -G "Unix Makefiles" --log-level DEBUG
 | ![Board Top Layer](images/R1.0/top.svg) | ![Board Bottom Layer](images/R1.0/bottom.svg) |
 
 ### Rev 1.1
+
+| Top | Bottom |
+| --- | ------ |
+|     |        |

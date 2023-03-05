@@ -1,9 +1,6 @@
 #include <avr/builtins.h>
+#include <avr/interrupt.h>
 #include <avr/io.h>
-
-void setup()
-{
-}
 
 int main(int argc, char const *argv[])
 {
