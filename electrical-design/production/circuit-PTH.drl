@@ -1,7 +1,7 @@
 M48
-; DRILL file {KiCad 7.0.0-da2b9df05c~171~ubuntu22.04.1} date Thu 09 Mar 2023 09:45:28 PM AWST
+; DRILL file {KiCad 7.0.0-da2b9df05c~171~ubuntu22.04.1} date Sat 11 Mar 2023 08:30:01 PM AWST
 ; FORMAT={-:-/ absolute / inch / decimal}
-; #@! TF.CreationDate,2023-03-09T21:45:28+08:00
+; #@! TF.CreationDate,2023-03-11T20:30:01+08:00
 ; #@! TF.GenerationSoftware,Kicad,Pcbnew,7.0.0-da2b9df05c~171~ubuntu22.04.1
 ; #@! TF.FileFunction,Plated,1,4,PTH
 FMAT,2
@@ -9,23 +9,21 @@ INCH
 ; #@! TA.AperFunction,Plated,PTH,ViaDrill
 T1C0.0079
 ; #@! TA.AperFunction,Plated,PTH,ComponentDrill
-T2C0.0236
+T2C0.0295
 ; #@! TA.AperFunction,Plated,PTH,ComponentDrill
-T3C0.0295
+T3C0.0315
 ; #@! TA.AperFunction,Plated,PTH,ComponentDrill
-T4C0.0315
+T4C0.0354
 ; #@! TA.AperFunction,Plated,PTH,ComponentDrill
-T5C0.0354
+T5C0.0394
 ; #@! TA.AperFunction,Plated,PTH,ComponentDrill
-T6C0.0394
+T6C0.0433
 ; #@! TA.AperFunction,Plated,PTH,ComponentDrill
-T7C0.0433
+T7C0.0472
 ; #@! TA.AperFunction,Plated,PTH,ComponentDrill
-T8C0.0472
+T8C0.0866
 ; #@! TA.AperFunction,Plated,PTH,ComponentDrill
-T9C0.0866
-; #@! TA.AperFunction,Plated,PTH,ComponentDrill
-T10C0.1171
+T9C0.1171
 %
 G90
 G05
@@ -34,11 +32,8 @@ X3.99Y-2.19
 X3.99Y-2.22
 X3.99Y-2.25
 X3.99Y-2.28
-X5.435Y-2.39
+X5.435Y-2.4
 T2
-X5.4813Y-2.1
-X5.56Y-2.1
-T3
 X2.8843Y-1.84
 X2.8843Y-1.89
 X2.8843Y-1.94
@@ -51,7 +46,7 @@ X3.4509Y-1.94
 X3.7343Y-1.84
 X3.7343Y-1.89
 X3.7343Y-1.94
-T4
+T3
 X2.46Y-2.11
 X2.48Y-3.27
 X2.76Y-2.11
@@ -168,16 +163,16 @@ X5.03Y-1.3408
 X5.03Y-1.4392
 X5.06Y-1.96
 X5.06Y-2.1
-X5.0746Y-2.4008
-X5.0746Y-2.4992
+X5.08Y-2.4108
+X5.08Y-2.5092
 X5.36Y-1.96
 X5.36Y-2.1
+T4
+X5.12Y-3.16
+X5.22Y-3.16
+X5.4Y-3.16
+X5.5Y-3.16
 T5
-X5.2296Y-3.1
-X5.2298Y-3.37
-X5.3296Y-3.1
-X5.3298Y-3.37
-T6
 X2.5603Y-2.7077
 X2.5603Y-3.0077
 X2.6603Y-2.7077
@@ -192,7 +187,7 @@ X5.385Y-2.7
 X5.485Y-2.5
 X5.485Y-2.6
 X5.485Y-2.7
-T7
+T6
 X3.462Y-3.201
 X3.462Y-3.3782
 X3.718Y-3.201
@@ -201,16 +196,16 @@ X4.6467Y-1.2835
 X4.6467Y-1.4606
 X4.9026Y-1.2835
 X4.9026Y-1.4606
-T8
+T7
 X5.62Y-1.4231
 X5.62Y-1.5216
 X5.62Y-1.62
-T9
+T8
 X2.4Y-1.1
 X2.4Y-3.5409
 X5.6283Y-1.1
 X5.6283Y-3.5409
-T10
+T9
 X5.3444Y-1.3483
 X5.3444Y-1.6948
 T0
