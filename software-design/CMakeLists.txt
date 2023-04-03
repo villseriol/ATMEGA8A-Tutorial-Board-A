@@ -6,7 +6,7 @@ include(cmake/atmega-8a-device.cmake)
 ######################################################################
 ######################################################################
 find_program(AVRDUDE avrdude)
-set(AVRDUDE_ARGS -e -v -p ${DEVICE} -c avrisp2 -P COM3 -b 19200)
+set(AVRDUDE_ARGS -e -v -p ${DEVICE} -c usbasp)
 
 set(CMAKE_ASM_FLAGS "-x assembler-with-cpp ${CFLAGS}")
 set(CMAKE_C_STANDARD 99)
@@ -33,11 +33,11 @@ add_custom_target(
    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
 )
 
-add_custom_target(
-   fuse
-   COMMAND ${AVRDUDE_ARGS} -U lfuse:w:${L_FUSE}:m -U hfuse:w:${H_FUSE}:m
-   WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-)
+# add_custom_target(
+#    fuse
+#    COMMAND ${AVRDUDE_ARGS} -U lfuse:w:${L_FUSE}:m -U hfuse:w:${H_FUSE}:m
+#    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+# )
 
 add_custom_target(
    disassemble
