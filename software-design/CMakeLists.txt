@@ -33,11 +33,11 @@ add_custom_target(
    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
 )
 
-# add_custom_target(
-#    fuse
-#    COMMAND ${AVRDUDE_ARGS} -U lfuse:w:${L_FUSE}:m -U hfuse:w:${H_FUSE}:m
-#    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-# )
+add_custom_target(
+   fuse
+   COMMAND ${AVRDUDE_ARGS} -U lfuse:w:${L_FUSE}:m -U hfuse:w:${H_FUSE}:m
+   WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+)
 
 add_custom_target(
    disassemble

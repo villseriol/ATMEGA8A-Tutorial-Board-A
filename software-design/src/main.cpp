@@ -4,15 +4,18 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     __builtin_avr_cli();
-    DDRB = 0xFF;
+
+    DDRD = _BV(PD0) | _BV(PD1) | _BV(PD2) | _BV(PD3) | _BV(PD4) | _BV(PD5) | _BV(PD6) | _BV(PD7);
+    DDRC = _BV(PC0) | _BV(PC1) | _BV(PC2) | _BV(PC3);
+
     __builtin_avr_sei();
 
-    while (true)
+    while (1)
     {
-        PORTB ^= 0xFF;
+        PORTD ^= 0xFF;
         _delay_ms(1000);
     }
 }
