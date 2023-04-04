@@ -21,10 +21,11 @@ set_target_properties(
    COMPILE_FLAGS "-DF_CPU=${CLOCK} -mmcu=${DEVICE}"
 )
 
-execute_process(
+add_custom_command(TARGET main POST_BUILD
    COMMAND ${AVR_OBJCOPY} -j .text -j .data -O ihex main.elf main.hex
    COMMAND ${AVR_SIZE_TOOL} -d main.elf
    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+   COMMENT "Generating hex file..."
 )
 
 add_custom_target(

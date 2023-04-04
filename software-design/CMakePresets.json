@@ -1,0 +1,25 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 10,
+        "patch": 0
+    },
+    "buildPresets": [
+        {
+            "name": "debug",
+            "configurePreset": "debug",
+            "cleanFirst": true
+        }
+    ],
+    "configurePresets": [
+        {
+            "name": "debug",
+            "displayName": "Debug",
+            "generator": "Unix Makefiles",
+            "description": "Default debug profile.",
+            "binaryDir": "${sourceDir}/build/debug",
+            "toolchainFile": "${sourceDir}/cmake/avr-gcc-toolchain.cmake"
+        }
+    ]
+}
