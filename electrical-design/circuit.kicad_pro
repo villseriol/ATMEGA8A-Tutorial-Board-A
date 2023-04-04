@@ -46,7 +46,7 @@
         "silk_text_upright": true,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.254
         }
       },
       "diff_pair_dimensions": [
@@ -128,7 +128,7 @@
         "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.09,
         "min_via_annular_width": 0.13,
-        "min_via_diameter": 0.39999999999999997,
+        "min_via_diameter": 0.25,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -427,7 +427,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.475,
+        "via_diameter": 0.4,
         "via_drill": 0.2,
         "wire_width": 6
       },
@@ -444,7 +444,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.475,
+        "via_diameter": 0.4,
         "via_drill": 0.2,
         "wire_width": 6
       }
@@ -543,7 +543,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "production/circuit.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
