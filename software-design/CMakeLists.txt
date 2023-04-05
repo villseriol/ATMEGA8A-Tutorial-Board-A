@@ -9,8 +9,30 @@ set(L_FUSE $ENV{L_FUSE})
 set(H_FUSE $ENV{H_FUSE})
 set(PROGRAMMER $ENV{PROGRAMMER})
 
-######################################################################
-######################################################################
+function(target_add_elf target)
+   message(STATUS "Adding .elf compilation target ${target}...")
+
+   set_target_properties(
+      ${target}
+      PROPERTIES
+      OUTPUT_NAME ${target}.elf
+      COMPILE_FLAGS "-DF_CPU=${F_CPU} -mmcu=${DEVICE}"
+   )
+
+   add_custom_command(TARGET ${target} POST_BUILD
+      COMMAND ${AVR_OBJCOPY} -j .text -j .data -O ihex ${target}.elf ${target}.hex
+      COMMAND ${AVR_SIZE_TOOL} -d ${target}.elf
+      WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+      COMMENT "Generating hex file..."
+   )
+
+   add_custom_target(
+      flash-${target}
+      COMMAND ${AVRDUDE} ${AVRDUDE_ARGS} -u -U flash:w:${target}.hex:i
+      WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+   )
+endfunction()
+
 find_program(AVRDUDE avrdude)
 set(AVRDUDE_ARGS -e -v -p ${DEVICE} -c ${PROGRAMMER})
 
@@ -23,27 +45,19 @@ add_library(common src/common.cpp)
 target_include_directories(common PUBLIC include)
 
 add_executable(main src/main.cpp)
-set_target_properties(
-   main
-   PROPERTIES
-   OUTPUT_NAME main.elf
-   COMPILE_FLAGS "-DF_CPU=${F_CPU} -mmcu=${DEVICE}"
-)
 target_link_libraries(main common)
+target_add_elf(main)
 
-add_custom_command(TARGET main POST_BUILD
-   COMMAND ${AVR_OBJCOPY} -j .text -j .data -O ihex main.elf main.hex
-   COMMAND ${AVR_SIZE_TOOL} -d main.elf
-   WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-   COMMENT "Generating hex file..."
-)
+add_executable(blink-sync src/blink_sync.cpp)
+target_link_libraries(blink-sync common)
+target_add_elf(blink-sync)
 
-add_custom_target(
-   flash
-   COMMAND ${AVRDUDE} ${AVRDUDE_ARGS} -u -U flash:w:main.hex:i
-   WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-)
+add_executable(blink-async src/blink_async.cpp)
+target_link_libraries(blink-async common)
+target_add_elf(blink-async)
 
+# #####################################################################
+# #####################################################################
 add_custom_target(
    fuse
    COMMAND ${AVRDUDE_ARGS} -U lfuse:w:${L_FUSE}:m -U hfuse:w:${H_FUSE}:m
