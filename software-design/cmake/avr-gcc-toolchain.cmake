@@ -8,7 +8,7 @@ function(check_program PROGRAM_NAME ENVIRONMENT_VARIABLE)
     if (NOT ${ENVIRONMENT_VARIABLE})
         message(CHECK_FAIL "${PROGRAM_NAME} not found")
     endif()
-    message(CHECK_PASS "Found avr-gcc")
+    message(CHECK_PASS "Found ${PROGRAM_NAME}")
 endfunction(check_program PROGRAM_NAME)
 
 cmake_language(CALL check_program "avr-gcc" "AVR_CC")

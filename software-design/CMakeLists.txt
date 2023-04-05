@@ -1,7 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 project(atmega8a-evaluation-board)
 
-include(cmake/atmega-8a-device.cmake)
+set(F_CPU $ENV{F_CPU})
+set(DEVICE $ENV{DEVICE})
+set(E_FUSE $ENV{E_FUSE})
+set(L_FUSE $ENV{L_FUSE})
+set(H_FUSE $ENV{H_FUSE})
 
 ######################################################################
 ######################################################################
@@ -18,7 +22,7 @@ set_target_properties(
    main
    PROPERTIES
    OUTPUT_NAME main.elf
-   COMPILE_FLAGS "-DF_CPU=${CLOCK} -mmcu=${DEVICE}"
+   COMPILE_FLAGS "-DF_CPU=${F_CPU} -mmcu=${DEVICE}"
 )
 
 add_custom_command(TARGET main POST_BUILD
