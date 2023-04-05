@@ -25,7 +25,6 @@
             "binaryDir": "${sourceDir}/build/debug",
             "toolchainFile": "${sourceDir}/cmake/avr-gcc-toolchain.cmake",
             "environment": {
-                "DEVICE": "atmega8",
                 "F_CPU": "16000000",
                 "E_FUSE": "0xFF",
                 "L_FUSE": "0xEF",

@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 project(atmega8a-evaluation-board)
 
+set(DEVICE "atmega8")
+
 set(F_CPU $ENV{F_CPU})
-set(DEVICE $ENV{DEVICE})
 set(E_FUSE $ENV{E_FUSE})
 set(L_FUSE $ENV{L_FUSE})
 set(H_FUSE $ENV{H_FUSE})
@@ -18,6 +19,9 @@ set(CMAKE_C_STANDARD 99)
 
 add_compile_options(-Wall -Os)
 
+add_library(common src/common.cpp)
+target_include_directories(common PUBLIC include)
+
 add_executable(main src/main.cpp)
 set_target_properties(
    main
@@ -25,6 +29,7 @@ set_target_properties(
    OUTPUT_NAME main.elf
    COMPILE_FLAGS "-DF_CPU=${F_CPU} -mmcu=${DEVICE}"
 )
+target_link_libraries(main common)
 
 add_custom_command(TARGET main POST_BUILD
    COMMAND ${AVR_OBJCOPY} -j .text -j .data -O ihex main.elf main.hex
