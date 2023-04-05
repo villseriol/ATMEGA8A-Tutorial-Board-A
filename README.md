@@ -15,7 +15,7 @@ sudo apt-get install binutils gcc-avr avr-libc uisp avrdude flex byacc bison
 ```
 
 ```bash
-cmake --build . --preset debug
+cmake --build . --preset default
 ```
 
 ## Specifications
