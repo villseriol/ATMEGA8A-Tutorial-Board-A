@@ -29,7 +29,8 @@
                 "F_CPU": "16000000",
                 "E_FUSE": "0xFF",
                 "L_FUSE": "0xEF",
-                "H_FUSE": "0xC9"
+                "H_FUSE": "0xC9",
+                "PROGRAMMER": "usbasp"
             }
         }
     ]

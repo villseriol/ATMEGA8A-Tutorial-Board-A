@@ -6,11 +6,12 @@ set(DEVICE $ENV{DEVICE})
 set(E_FUSE $ENV{E_FUSE})
 set(L_FUSE $ENV{L_FUSE})
 set(H_FUSE $ENV{H_FUSE})
+set(PROGRAMMER $ENV{PROGRAMMER})
 
 ######################################################################
 ######################################################################
 find_program(AVRDUDE avrdude)
-set(AVRDUDE_ARGS -e -v -p ${DEVICE} -c usbasp)
+set(AVRDUDE_ARGS -e -v -p ${DEVICE} -c ${PROGRAMMER})
 
 set(CMAKE_ASM_FLAGS "-x assembler-with-cpp ${CFLAGS}")
 set(CMAKE_C_STANDARD 99)
