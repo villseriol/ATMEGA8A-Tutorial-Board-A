@@ -7,22 +7,22 @@
     },
     "buildPresets": [
         {
-            "name": "debug",
-            "configurePreset": "debug",
+            "name": "default",
+            "configurePreset": "default",
             "cleanFirst": true
         }
     ],
     "configurePresets": [
         {
-            "name": "debug",
-            "displayName": "Debug",
+            "name": "default",
+            "displayName": "Default",
             "architecture": {
                 "strategy": "external",
                 "value": "avr8"
             },
             "generator": "Unix Makefiles",
-            "description": "Default debug profile.",
-            "binaryDir": "${sourceDir}/build/debug",
+            "description": "Default profile.",
+            "binaryDir": "${sourceDir}/build/default",
             "toolchainFile": "${sourceDir}/cmake/avr-gcc-toolchain.cmake",
             "environment": {
                 "F_CPU": "16000000",
