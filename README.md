@@ -15,7 +15,10 @@ sudo apt-get install binutils gcc-avr avr-libc uisp avrdude flex byacc bison
 ```
 
 ```bash
+# Windows 10
 cmake --build . --preset default
+# Ubuntu
+cmake --build --preset default
 ```
 
 ## Specifications
