@@ -75,14 +75,6 @@ add_executable(blink-async src/blink_async.cpp)
 target_link_libraries(blink-async common)
 target_add_elf(blink-async)
 
-add_executable(floating-point src/floating_point.cpp)
-target_link_libraries(floating-point common)
-target_add_elf(floating-point)
-
-add_executable(integer src/integer_arithmetic.cpp)
-target_link_libraries(integer common)
-target_add_elf(integer)
-
 # #####################################################################
 # #####################################################################
 add_custom_target(
