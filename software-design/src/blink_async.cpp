@@ -15,9 +15,6 @@ int main(void)
     TCCR1B = _BV(CS12);
     TIMSK = _BV(OCIE1A) | _BV(OCIE1B);
 
-    OCR1A = 0xFFFF;
-    OCR1B = 0xFFFF;
-
     __builtin_avr_sei();
 
     while (1)
@@ -28,8 +25,10 @@ int main(void)
 
 ISR(TIMER1_COMPA_vect)
 {
+    OCR1A += (1 << 15);
 }
 
 ISR(TIMER1_COMPB_vect)
 {
+    OCR1B += (1 << 15);
 }
