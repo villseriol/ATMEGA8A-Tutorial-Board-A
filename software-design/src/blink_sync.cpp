@@ -12,7 +12,7 @@ int main(void)
 
     while (1)
     {
-        PORTD ^= 0xFF;
+        PORTB ^= (_BV(PB1) | _BV(PB2));
         _delay_ms(1000);
     }
 }
