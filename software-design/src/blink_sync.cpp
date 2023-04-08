@@ -1,6 +1,5 @@
 #define __AVR_ATmega8A__ ;
 
-#include <avr/builtins.h>
 #include <avr/io.h>
 #include <util/delay.h>
 
@@ -12,7 +11,7 @@ int main(void)
 
     while (1)
     {
-        PORTB ^= (_BV(PB1) | _BV(PB2));
+        PORTB ^= _BV(PB1) | _BV(PB2);
         _delay_ms(1000);
     }
 }

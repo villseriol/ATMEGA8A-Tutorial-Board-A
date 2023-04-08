@@ -5,9 +5,11 @@ set(CMAKE_CROSSCOMPILING 1)
 function(check_program PROGRAM_NAME ENVIRONMENT_VARIABLE)
     message(CHECK_START "Finding ${PROGRAM_NAME}")
     find_program(${ENVIRONMENT_VARIABLE} ${PROGRAM_NAME})
-    if (NOT ${ENVIRONMENT_VARIABLE})
+
+    if(NOT ${ENVIRONMENT_VARIABLE})
         message(CHECK_FAIL "${PROGRAM_NAME} not found")
     endif()
+
     message(CHECK_PASS "Found ${PROGRAM_NAME}")
 endfunction(check_program PROGRAM_NAME)
 

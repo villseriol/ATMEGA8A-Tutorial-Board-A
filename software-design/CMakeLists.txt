@@ -47,7 +47,7 @@ function(target_add_elf target)
 
    add_custom_target(
       disassemble-${target}
-      COMMAND ${AVR_OBJDUMP} -d -S ${target}.elf
+      COMMAND ${AVR_OBJDUMP} --architecture=avr -d -S ${target}.elf
       WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
    )
 endfunction()
@@ -56,9 +56,10 @@ find_program(AVRDUDE avrdude)
 set(AVRDUDE_ARGS -e -v -p ${DEVICE} -c ${PROGRAMMER})
 
 set(CMAKE_ASM_FLAGS "-x assembler-with-cpp ${CFLAGS}")
+set(CMAKE_EXE_LINKER_FLAGS -mmcu=${DEVICE})
 set(CMAKE_C_STANDARD 99)
 
-add_compile_options(-Wall -Os)
+add_compile_options(-Wall -Os -pedantic)
 
 add_library(common src/common.cpp)
 target_include_directories(common PUBLIC include)
