@@ -1,12 +1,34 @@
+/**
+ * 7-Segment Display
+ *
+ * Port D (Active Low)
+ * D0 - F
+ * D1 - C
+ * D2 - A
+ * D3 - G
+ * D4 - B
+ * D5 - D
+ * D6 - E
+ * D7 - DEC
+ *
+ * PORT C (Active Low)
+ * C0:C3 (Least Significant Digit : Most Significant Digit)
+ */
+
+/**
+ * LED (Active High)
+ * B1 - D1
+ * B2 - D2
+ */
+
+/**
+ * Potentiometer (~50K)
+ * C4
+ */
 #pragma once
 
 #ifndef __AVR_ATmega8A__
 #define __AVR_ATmega8A__
-#endif
-
-#ifndef F_CPU
-#warning "F_CPU not defined for <common.h>"
-#define F_CPU 16000000UL
 #endif
 
 #include <avr/builtins.h>
