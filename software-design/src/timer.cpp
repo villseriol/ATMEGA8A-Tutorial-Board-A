@@ -68,7 +68,7 @@ int main(void)
     TIMSK |= _BV(TOIE0);
     TCCR0 = _BV(CS02);
 
-    TCCR1B = _BV(ICNC1) | _BV(CS11);
+    TCCR1B = _BV(ICES1) | _BV(ICNC1) | _BV(CS11);
     TIMSK |= _BV(TICIE1);
 
     __builtin_avr_sei();
