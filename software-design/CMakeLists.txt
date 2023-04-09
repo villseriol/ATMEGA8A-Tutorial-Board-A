@@ -80,6 +80,10 @@ add_executable(7-segment src/7_segment.cpp)
 target_link_libraries(7-segment common)
 target_add_elf(7-segment)
 
+add_executable(timer src/timer.cpp)
+target_link_libraries(timer common)
+target_add_elf(timer)
+
 # #####################################################################
 # #####################################################################
 add_custom_target(
