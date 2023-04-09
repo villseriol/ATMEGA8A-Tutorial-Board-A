@@ -11,6 +11,7 @@ int main(void)
     common::setup();
 
     __builtin_avr_cli();
+
     TCCR1A = _BV(COM1A0) | _BV(COM1B0);
     TCCR1B = _BV(CS12);
     TIMSK = _BV(OCIE1A) | _BV(OCIE1B);
@@ -25,10 +26,10 @@ int main(void)
 
 ISR(TIMER1_COMPA_vect)
 {
-    OCR1A += (1 << 15);
+    OCR1A += HZ_CYCLES(2, 256);
 }
 
 ISR(TIMER1_COMPB_vect)
 {
-    OCR1B += (1 << 15);
+    OCR1B += HZ_CYCLES(2, 256);
 }
