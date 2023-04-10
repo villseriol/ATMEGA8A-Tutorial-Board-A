@@ -15,3 +15,16 @@ void common::setup()
 
     __builtin_avr_sei();
 }
+
+void common::uto7(const uint16_t value, uint8_t *buffer)
+{
+    uint16_t quotient = value;
+    uint16_t remainder = 0;
+
+    do
+    {
+        remainder = quotient % 10;
+        *buffer++ = pgm_read_byte(&common::SEVEN_SEGMENT_MAP[remainder]);
+        quotient /= 10;
+    } while (quotient > 0);
+}

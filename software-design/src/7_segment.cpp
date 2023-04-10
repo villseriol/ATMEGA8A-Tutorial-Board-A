@@ -14,43 +14,11 @@ namespace context
     const uint8_t digits_size = sizeof(context::digits) / sizeof(*context::digits);
 } // namespace context
 
-const unsigned char SEGMENT_NUMBER[] PROGMEM = {
-    (unsigned char)~0b01110111, // 0
-    (unsigned char)~0b00010010, // 1
-    (unsigned char)~0b01111100, // 2
-    (unsigned char)~0b00111110, // 3
-    (unsigned char)~0b00011011, // 4
-    (unsigned char)~0b00101111, // 5
-    (unsigned char)~0b01101111, // 6
-    (unsigned char)~0b00010110, // 7
-    (unsigned char)~0b01111111, // 8
-    (unsigned char)~0b00011111, // 9
-    (unsigned char)~0b01011111, // A
-    (unsigned char)~0b01101011, // B
-    (unsigned char)~0b01100101, // C
-    (unsigned char)~0b01111010, // D
-    (unsigned char)~0b01101101, // E
-    (unsigned char)~0b01001101, // F
-};
-
-void ito7(const uint16_t value, uint8_t *buffer)
-{
-    uint16_t quotient = value;
-    uint16_t remainder = 0;
-
-    do
-    {
-        remainder = quotient % 10;
-        *buffer++ = pgm_read_byte(&SEGMENT_NUMBER[remainder]);
-        quotient /= 10;
-    } while (quotient > 0);
-}
-
 void print(const uint16_t number)
 {
     uint8_t buffer[] = {0xFF, 0xFF, 0xFF, 0xFF};
     const uint8_t buffer_size = sizeof(buffer) / sizeof(*buffer);
-    ito7(number, buffer);
+    common::uto7(number, buffer);
 
     for (uint8_t i = 0; i < buffer_size; i++)
     {
