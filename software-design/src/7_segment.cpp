@@ -3,7 +3,6 @@
 #include <avr/builtins.h>
 #include <avr/interrupt.h>
 #include <avr/io.h>
-#include <avr/pgmspace.h>
 #include <util/delay.h>
 
 #include "common.h"
@@ -41,9 +40,8 @@ int main(void)
 
     while (1)
     {
-        counter++;
         print(counter);
-        counter %= 10000;
+        ++counter %= 10000;
         _delay_ms(1000);
     }
 }
