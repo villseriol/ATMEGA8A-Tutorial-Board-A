@@ -45,7 +45,7 @@ make fuse
 
 <p>
 
-<img src="images/7-segment.svg" width="25%" align="left"/>
+<img src="images/7-segment.svg" width="25%" align="left" style="padding:12px" />
 
 The 7-segment display uses all of Port D for setting the individual segments.
 The lower nibble of Port C is used to multiplex the currently active digit.
