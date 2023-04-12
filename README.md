@@ -43,7 +43,7 @@ make fuse
 
 ## 7 Segment
 
-<p style="padding:12px" >
+<p>
 
 <img src="images/7-segment.svg" width="25%" align="left" />
 
@@ -52,6 +52,8 @@ The lower nibble of Port C is used to multiplex the currently active digit.
 The digits are numbered from left to right when the decimal point is positioned correctly relative to the users point of view.
 
 </p>
+
+<p>&nbsp;</p>
 
 | Microcontroller | D0  | D1  | D2  | D3  | D4  | D6  | D7  | C0      | C1      | C2      | C3      |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | ------- | ------- | ------- | ------- |
