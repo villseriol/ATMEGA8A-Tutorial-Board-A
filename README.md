@@ -43,21 +43,26 @@ make fuse
 
 ## 7 Segment
 
-<p>
-
-<img src="images/7-segment.svg" width="25%" height="auto" align="left" />
-
-The 7-segment display uses all of Port D for setting the individual segments.
-The lower nibble of Port C is used to multiplex the currently active digit.
-The digits are numbered from left to right when the decimal point is positioned correctly relative to the users point of view.
-
-</p>
-
-<p>&nbsp;</p>
+| Diagram                                                         | Description                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="images/7-segment.svg"  height="250px" width="auto" /> | <ul><li>The 7-segment display uses all of Port D for setting the individual segments</li><li>The lower nibble of Port C is used to multiplex the currently active digit</li><li>The digits are numbered from left to right when the decimal point is positioned correctly relative to the users point of view</li><li>All segments and selection pins are active low</li></ul> |
 
 | Microcontroller | D0  | D1  | D2  | D3  | D4  | D6  | D7  | C0      | C1      | C2      | C3      |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | ------- | ------- | ------- | ------- |
 | 7-segment       | F   | C   | A   | G   | B   | E   | DEC | Digit 1 | Digit 2 | Digit 3 | Digit 4 |
+
+| Value | D0  | D1  | D2  | D3  | D4  | D5  | D6  | D7  | HEX  |
+| ----- | --- | --- | --- | --- | --- | --- | --- | --- | ---- |
+| 0     | 0   | 0   | 0   | 1   | 0   | 0   | 0   | 1   | 0x88 |
+| 1     | 1   | 0   | 1   | 1   | 0   | 1   | 1   | 1   | 0xED |
+| 2     | 1   | 1   | 0   | 0   | 0   | 0   | 0   | 1   | 0x83 |
+| 3     | 1   | 0   | 0   | 0   | 0   | 0   | 1   | 1   | 0xC1 |
+| 4     | 0   | 0   | 1   | 0   | 1   | 1   | 1   | 1   | 0xE4 |
+| 5     | 0   | 0   | 0   | 1   | 1   | 0   | 1   | 1   | 0xD0 |
+| 6     | 0   | 0   | 0   | 1   | 1   | 0   | 0   | 1   | 0x90 |
+| 7     | 1   | 0   | 0   | 1   | 0   | 1   | 1   | 1   | 0xE9 |
+| 8     | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 1   | 0x80 |
+| 9     | 0   | 0   | 0   | 0   | 0   | 1   | 1   | 1   | 0xE0 |
 
 ## Specifications
 
