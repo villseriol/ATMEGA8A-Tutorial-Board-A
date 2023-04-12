@@ -10,27 +10,29 @@
   </rdf:RDF>
  </metadata>
  <g transform="translate(-82,-56.5)">
-  <g fill="none" stroke="#000">
-   <g stroke-width="1px">
-    <path d="m190.8 72.5-15.212 15.5h-59l-15.518-15.5 15.518-15.5h59z"/>
-    <path d="m190.8 154-15.212 15.5h-59l-15.518-15.5 15.518-15.5h59z"/>
-    <path d="m98 75.385 15.5 15.212v45l-15.5 15.518-15.5-15.518v-45z"/>
-    <path d="m194 75.385 15.5 15.212v45l-15.5 15.518-15.5-15.518v-45z"/>
-    <path d="m190.8 236.06-15.212 15.5h-59l-15.518-15.5 15.518-15.5h59z"/>
-    <path d="m98 157.44 15.5 15.212v45l-15.5 15.518-15.5-15.518v-45z"/>
-    <path d="m194 157.44 15.5 15.212v45l-15.5 15.518-15.5-15.518v-45z"/>
+  <g transform="matrix(.79482 0 0 .79482 32.828 31.655)">
+   <g fill="none" stroke="#000">
+    <g stroke-width="1px">
+     <path d="m190.8 72.5-15.212 15.5h-59l-15.518-15.5 15.518-15.5h59z"/>
+     <path d="m190.8 154-15.212 15.5h-59l-15.518-15.5 15.518-15.5h59z"/>
+     <path d="m98 75.385 15.5 15.212v45l-15.5 15.518-15.5-15.518v-45z"/>
+     <path d="m194 75.385 15.5 15.212v45l-15.5 15.518-15.5-15.518v-45z"/>
+     <path d="m190.8 236.06-15.212 15.5h-59l-15.518-15.5 15.518-15.5h59z"/>
+     <path d="m98 157.44 15.5 15.212v45l-15.5 15.518-15.5-15.518v-45z"/>
+     <path d="m194 157.44 15.5 15.212v45l-15.5 15.518-15.5-15.518v-45z"/>
+    </g>
+    <circle transform="translate(16,-60)" cx="209.25" cy="299.25" r="12.25" stroke-linecap="round"/>
    </g>
-   <circle transform="translate(16,-60)" cx="209.25" cy="299.25" r="12.25" stroke-linecap="round"/>
-  </g>
-  <g fill="#ff0000">
-   <text x="141.82739" y="76.874023" xml:space="preserve"><tspan x="141.82739" y="76.874023">A</tspan></text>
-   <text x="189.71973" y="117.62749" xml:space="preserve"><tspan x="189.71973" y="117.62749">B</tspan></text>
-   <text x="189.79883" y="199.67908" xml:space="preserve"><tspan x="189.79883" y="199.67908">C</tspan></text>
-   <text x="141.07446" y="240.43146" xml:space="preserve"><tspan x="141.07446" y="240.43146">D</tspan></text>
-   <text x="94.003906" y="199.68494" xml:space="preserve"><tspan x="94.003906" y="199.68494">E</tspan></text>
-   <text x="94.308594" y="117.62749" xml:space="preserve"><tspan x="94.308594" y="117.62749">F</tspan></text>
-   <text x="212.38574" y="224.4256" xml:space="preserve"><tspan x="212.38574" y="224.4256">DEC</tspan></text>
-   <text x="141.43481" y="158.36816" xml:space="preserve"><tspan x="141.43481" y="158.36816">G</tspan></text>
+   <g fill="#ff0000">
+    <text x="141.82739" y="76.874023" xml:space="preserve"><tspan x="141.82739" y="76.874023">A</tspan></text>
+    <text x="189.71973" y="117.62749" xml:space="preserve"><tspan x="189.71973" y="117.62749">B</tspan></text>
+    <text x="189.79883" y="199.67908" xml:space="preserve"><tspan x="189.79883" y="199.67908">C</tspan></text>
+    <text x="141.07446" y="240.43146" xml:space="preserve"><tspan x="141.07446" y="240.43146">D</tspan></text>
+    <text x="94.003906" y="199.68494" xml:space="preserve"><tspan x="94.003906" y="199.68494">E</tspan></text>
+    <text x="94.308594" y="117.62749" xml:space="preserve"><tspan x="94.308594" y="117.62749">F</tspan></text>
+    <text x="212.38574" y="224.4256" xml:space="preserve"><tspan x="212.38574" y="224.4256">DEC</tspan></text>
+    <text x="141.43481" y="158.36816" xml:space="preserve"><tspan x="141.43481" y="158.36816">G</tspan></text>
+   </g>
   </g>
  </g>
 </svg>
