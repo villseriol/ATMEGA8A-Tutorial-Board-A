@@ -41,6 +41,22 @@ make disassemble-blink-sync
 make fuse
 ```
 
+## 7 Segment
+
+<p>
+
+<img src="images/7-segment.svg" width="25%" align="left"/>
+
+The 7-segment display uses all of Port D for setting the individual segments.
+The lower nibble of Port C is used to multiplex the currently active digit.
+The digits are numbered from left to right when the decimal point is positioned correctly relative to the users point of view.
+
+</p>
+
+| Microcontroller | D0  | D1  | D2  | D3  | D4  | D6  | D7  | C0      | C1      | C2      | C3      |
+| --------------- | --- | --- | --- | --- | --- | --- | --- | ------- | ------- | ------- | ------- |
+| 7-segment       | F   | C   | A   | G   | B   | E   | DEC | Digit 1 | Digit 2 | Digit 3 | Digit 4 |
+
 ## Specifications
 
 ### Rev 1.0
