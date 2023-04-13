@@ -84,6 +84,10 @@ add_executable(timer src/timer.cpp)
 target_link_libraries(timer common)
 target_add_elf(timer)
 
+add_executable(adc src/adc.cpp)
+target_link_libraries(adc common)
+target_add_elf(adc)
+
 # #####################################################################
 # #####################################################################
 add_custom_target(
