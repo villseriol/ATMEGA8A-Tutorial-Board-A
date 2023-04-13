@@ -68,9 +68,15 @@ make fuse
 
 ### LED
 
+Two active high LEDs located on pins B1 and B2 of the microcontroller.
+
 ### Potentiometer
 
+A 50k linear potentiometer connected to pin C4. The potentiometer has two 1K resistors in series for current limiting & protection. It is expected that the analog readout on the potentiometer will never reach GND or VCC (but will come close).
+
 ### Timer
+
+The NE555 chip feeds into the input capture pin (B0) of the microcontroller. The output frequency ranges from 100Hz~1000Hz by setting the individual DIP switches.
 
 ## Specifications
 
