@@ -3,9 +3,9 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "7.0.0-da2b9df05c~171~ubuntu22.04.1"
+      "Version": "7.0.1-3b83917a11~172~ubuntu22.04.1"
     },
-    "CreationDate": "2023-03-13T21:40:03+08:00"
+    "CreationDate": "2023-04-14T20:07:57+08:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -19,7 +19,7 @@
     },
     "LayerNumber": 4,
     "BoardThickness": 1.6,
-    "Finish": "HAL lead-free"
+    "Finish": "HAL SnPb"
   },
   "DesignRules": [
     {
@@ -27,8 +27,8 @@
       "PadToPad": 0.1,
       "PadToTrack": 0.1,
       "TrackToTrack": 0.1,
-      "TrackToRegion": 0.508,
-      "RegionToRegion": 0.508
+      "TrackToRegion": 0.254,
+      "RegionToRegion": 0.254
     },
     {
       "Layers": "Inner",
