@@ -10,6 +10,11 @@
             "name": "default",
             "configurePreset": "default",
             "cleanFirst": true
+        },
+        {
+            "name": "avrispii",
+            "configurePreset": "avrispii",
+            "cleanFirst": true
         }
     ],
     "configurePresets": [
@@ -30,6 +35,25 @@
                 "L_FUSE": "0xEF",
                 "H_FUSE": "0xC9",
                 "PROGRAMMER": "usbasp"
+            }
+        },
+        {
+            "name": "avrispii",
+            "displayName": "AVR ISP v2",
+            "architecture": {
+                "strategy": "external",
+                "value": "avr8"
+            },
+            "generator": "Unix Makefiles",
+            "description": "Default profile.",
+            "binaryDir": "${sourceDir}/build/avrispii",
+            "toolchainFile": "${sourceDir}/cmake/avr-gcc-toolchain.cmake",
+            "environment": {
+                "F_CPU": "16000000",
+                "E_FUSE": "0xFF",
+                "L_FUSE": "0xEF",
+                "H_FUSE": "0xC9",
+                "PROGRAMMER": "avrispmkII"
             }
         }
     ]
