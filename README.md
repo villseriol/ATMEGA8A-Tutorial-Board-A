@@ -19,6 +19,8 @@ sudo apt-get install binutils gcc-avr avr-libc uisp avrdude flex byacc bison
 
 Execute the following commands in the `software-design` folder,
 
+#### USBasp
+
 ```bash
 # Windows 10
 cmake --preset default
@@ -26,6 +28,17 @@ cmake --build . --preset default
 # Ubuntu
 cmake --preset default
 cmake --build --preset default
+```
+
+#### AVRISP MKII
+
+```bash
+# Windows 10
+cmake --preset avrispii
+cmake --build . --preset avrispii
+# Ubuntu
+cmake --preset avrispii
+cmake --build --preset avrispii
 ```
 
 ### Targets
