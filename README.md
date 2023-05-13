@@ -94,4 +94,6 @@ The NE555 chip feeds into the input capture pin (B0) of the microcontroller. The
 
 ### Rev 1.2
 
-Reserved for future use.
+| Top                                     | Bottom                                        |
+| --------------------------------------- | --------------------------------------------- |
+| ![Board Top Layer](images/R1.2/top.svg) | ![Board Bottom Layer](images/R1.2/bottom.svg) |
